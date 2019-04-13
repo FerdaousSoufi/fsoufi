@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url('lake_layout.css');
+/*Adobe Ming Std L
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Ferdaous Soufi
+   Date:   06/26/2018
+   
+   Filename: lake_styles.css
+
+*/
+@font-face{
+    font-family: CAC Champagne;
+    src: url('cac_champagne.ttf') format('truetype')
+         url('cac_champagne.woff') format('woff');
+}
+@font-face{
+    font-family: Dobkin;
+    src: url('DobkinPlain.ttf') format('truetype')
+         url('DobkinPlain.woff') format('woff');
+    font-style: plain;
+   
+}
+
+html {
+    background-color: rgb(244, 241, 227); /* ivory blush color background */
+}
+header {
+ font-variant-caps: titling-caps; 
+    
+}
+body {
+    color: rgb(35,22, 22); /* dark plum colored font */
+    background-color: rgb(244, 241, 227); 
+    /*background-color: hsl(50, 14%, 87%); *//* darker ivory than original background */
+    font-family: 'CAC Champagne', 'Dobkin Plain';
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    font-family: 'CAC Champagne', 'Dobkin'; 
+    letter-spacing: 0.1em;
+    font-size: 2.5em; 
+    color: ivory;
+    font-weight: bolder;
+    background-color:rgba(35,22, 22, 0.9); /* dark plum colored font; semi-transparent */
+}
+h2{
+    text-align: center;
+    font-family: 'CAC Champagne', 'Dobkin'; 
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    color: ivory;
+    background-color: rgba(35, 22, 22, 0.7);
+}
+aside > h1 {
+    text-align: center;
+    font-family: 'CAC Champagne', 'Dobkin'; 
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    background-color: antiquewhite;
+    color:rgba(35,22, 22, 1.0);
+}
+aside > h2 {
+    text-align: center;
+    font-family: 'CAC Champagne', 'Dobkin'; 
+    letter-spacing: 0.1em;
+    font-size: 1.0em;
+    background-color: antiquewhite;
+    color: rgba(35,22, 22, 0.7);
+    text-decoration: inactiveborder;
+}
+aside > ul> li> cite >a{ /* the weird social media links that dont get included with regular li */
+    text-decoration: overline;  /* this selectes the intial link color of maroon instead of regular blue */
+    color: rgba(35, 22, 22, 0.7); 
+}
+aside > ul{
+   text-align: left;
+   font-family: 'Dobkin';    
+   background-color: hsl(50, 14%, 90%);
+   
+}
+aside > p{
+  text-align: justify;  /* makes txt uniform and centered */
+  font-family: 'Dobkin';    
+  background-color: hsl(50, 14%, 90%);
+}
+nav > ul{
+    line-height: 1.5em;
+    color: rgb(35,22, 22);
+    background-color: hsl(50, 14%, 90%);
+     font: menu;
+     padding-left: 8px; /* moves the list a little to center */
+ 
+}
+nav > ul >li.newgroup{
+    margin-top:20px;
+}
+nav > ul > li > a:hover, nav > ul > li > a:active { /* the color chages and becomes bold when mouse hoveres over link */
+    color: #660000;
+    text-decoration:none;
+    font-weight: bold;
+}
+ blockquote {
+    quotes: "\201C" "\201D";    /* the quotation marks for reviews*/
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(244, 241, 227);
+    line-height: 1.5em;
+}
+blockquote::before{
+    content: open-quote;
+    font-stretch:extra-expanded;
+    }
+blockquote::after{
+    content: close-quote;
+}
+body > footer{
+   color: ivory;
+   background-color:rgba(35,22, 22, 0.9);
+   font-weight: normal;
+}
+li {
+    color: #660000;
+    list-style-type: none;
+      padding-left: 10px;
+
+}
+li > a{
+  color:rgba(35,22, 22, 0.7);
+  text-decoration: overline;
+}
